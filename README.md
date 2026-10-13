@@ -1,16 +1,38 @@
-# React + Vite
+# AI Brow Advisor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered eyebrow styling web application built with React, JavaScript, and MediaPipe.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+AI Brow Advisor is a web application that uses computer vision and facial landmark detection to analyze facial proportions and explore personalized eyebrow styling recommendations.
 
-## React Compiler
+The project aims to help users discover eyebrow styles that complement their facial features.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Current Features
 
-## Expanding the ESLint configuration
+### 1. Image Upload
+- Developed an image upload component using React.
+- Provides an interface for users to submit facial images for analysis.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Facial Landmark Detection
+- Integrated MediaPipe for facial landmark detection.
+- Identifies facial landmarks that can be used to measure facial proportions.
+
+### 3. Face Shape Analysis
+- Developed JavaScript logic to calculate facial proportions using detected landmarks.
+- Uses measurements such as forehead width and face length.
+- Implements rule-based analysis for face shape classification, including oval, round, square, heart, diamond, oblong, and triangle face shapes.
+
+## Planned Features
+
+### 1. Personalized Eyebrow Recommendations
+- Recommend eyebrow shapes based on detected facial characteristics.
+- Provide explanations for why certain eyebrow styles may complement different face shapes.
+- Support five eyebrow styling options.
+
+### 2. Virtual Eyebrow Try-On
+- Overlay different eyebrow styles on uploaded facial images.
+- Allow users to compare eyebrow shapes visually.
+- Adjust eyebrow position and appearance using facial landmarks.
+
+### 3. Real
